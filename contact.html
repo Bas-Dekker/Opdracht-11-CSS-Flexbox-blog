@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <header>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </header>
+  <body>
+    <h1>Contactformulier</h1>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label
+          >Naam: <input type="text" name="name" id="name" required
+        /></label>
+      </p>
+      <p>
+        <label
+          >Email: <input type="email" name="email" id="email" required
+        /></label>
+      </p>
+      <p>
+        <label>Telefoon: <input type="tel" name="phone" id="phone" /></label>
+      </p>
+      <p>
+        <label
+          >Leeftijd:
+          <input type="number" name="leeftijd" id="age" min="1" max="200"
+        /></label>
+      </p>
+      <p>
+        <label
+          >Geboortedatum:
+          <input type="date" name="geboortedatum" min="1921-01-01"
+        /></label>
+      </p>
+      <p>
+        <label
+          >Man: <input type="radio" name="gender" id="man" value="Man"
+        /></label>
+        <label
+          >Vrouw: <input type="radio" name="gender" id="vrouw" value="Vrouw"
+        /></label>
+        <label
+          >Anders: <input type="radio" name="gender" id="anders" value="Anders"
+        /></label>
+      </p>
+      <div>
+        Favoriete cuisine:
+        <div>
+          <label
+            >Italiaans <input type="checkbox" name="Italiaans" id="Italiaans"
+          /></label>
+        </div>
+        <p>
+          <label>Thai: <input type="checkbox" name="Thai" id="Thai" /></label>
+        </p>
+        <p>
+          <label
+            >Ethiopisch:
+            <input type="checkbox" name="Ethiopisch" id="Ethiopisch"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Libanees: <input type="checkbox" name="Libanees" id="Libanees"
+          /></label>
+        </p>
+      </div>
+      <p>
+        <label
+          >Favoriete kleur van short:
+          <input type="color" name="Favoriete kleur short" id="favoriete kleur"
+        /></label>
+      </p>
+      <p>
+        <label>Biografie: </label
+        ><textarea id="Biografie" name="Biografie"> </textarea>
+      </p>
+      <p>
+        <label
+          >Upload je laatste recept: <input id="file" type="file" name="file"
+        /></label>
+      </p>
+      <p>
+        <label
+          >URL naar je recepten website: <input type="url" name="url" id="url"
+        /></label>
+      </p>
+      <p><button type="reset">Reset formulier</button></p>
+      <p><button type="submit">Submit</button></p>
+    </form>
+    <div>
+      <a href="index.html">Terug naar Home</a>
+    </div>
+  </body>
+</html>
